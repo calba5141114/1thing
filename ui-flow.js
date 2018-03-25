@@ -4,7 +4,7 @@
 function itemsShow() {
   for (var i = 0; i < items.length ; i++) {
     var blo =
-      '<li class="note w-50">' +
+      '<li class="note w-50 ">' +
       "<h3>" +
       items[i].title +
       "</h3>" +

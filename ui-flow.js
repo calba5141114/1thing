@@ -1,10 +1,8 @@
-// this app will control how the views appear when a user is logged in vs when they are not logged in.
-var noteMakeArea = document.getElementById("getNote");
 var cont = document.getElementById("content");
 
 // printing data to content area
 function itemsShow() {
-  for (var i = 0; i <= items.length ; i++) {
+  for (var i = 0; i < items.length + 1 ; i++) {
     var blo =
       '<li class="note w-50">' +
       "<h3>" +

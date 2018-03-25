@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>One thing I learned today </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="navbar-brand">
+            <img>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <br>
+        <h1 class="text-center display-4">One Thing I Learned Today.</h1>
+        <br>
+        <br>
+        <div class="container">
+            <br>
+            <div id="getNote">
+                <label class="h6" for="title1">Title:</label>
+                <input class="form-control" id="title1" type="text" value="" />
+                <br>
+                <label class="h6" for="body1">Body:</label>
+                <input class="form-control" id="body1" type="text" value="" />
+                <br>
+                <br>
+                <button class="btn btn-dark" id="sub">Submit</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h3 class="display-4 text-center">Notes Below.</h3>
+    <hr class="w-75">
+    <br>
+    <div class="container">
+        <ul id="content" style="list-style:none;">
+
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC9oeuJFyF2cydm5bn_jCC-6NopDIDZMn4",
+            authDomain: "one-thing-a-day-57049.firebaseapp.com",
+            databaseURL: "https://one-thing-a-day-57049.firebaseio.com",
+            projectId: "one-thing-a-day-57049",
+            storageBucket: "one-thing-a-day-57049.appspot.com",
+            messagingSenderId: "1031166639371"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        // items array init
+        var items = [];
+    </script>
+    <script src="./db.js"></script>
+    <script src="./ui-flow.js"></script>
+    <script src="./index.js"></script>
+
+
+</body>
+
+</html>

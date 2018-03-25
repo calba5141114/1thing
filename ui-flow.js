@@ -1,8 +1,8 @@
-var cont = document.getElementById("content");
+
 
 // printing data to content area
 function itemsShow() {
-  for (var i = 0; i < items.length + 1 ; i++) {
+  for (var i = 0; i < items.length ; i++) {
     var blo =
       '<li class="note w-50">' +
       "<h3>" +

@@ -1,6 +1,3 @@
-// connecting and creating an instance of the database.
-var database = firebase.database();
-var fireRef = database.ref("notes/");
 
 // creating item object
 function Item(title, body) {
@@ -20,6 +17,10 @@ function writeUserData(title, body) {
     title_note: title,
     body_note: body
   });
+}
+
+function getForms() {
+  writeUserData(title1.value, body1.value);
 }
 
 var query = firebase

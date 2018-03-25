@@ -4,5 +4,8 @@ submit.onclick = () => {
   title1.value = " ";
   body1.value = "";
   console.log(items);
+  $('#gem').css('visibility','visible');
+  $('#getNote').remove();
   itemsShow();
 };
+

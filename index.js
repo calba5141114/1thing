@@ -6,6 +6,7 @@ submit.onclick = () => {
   console.log(items);
   $('#gem').css('visibility','visible');
   $('#getNote').remove();
+  $('#mids').remove();
   itemsShow();
 };
 

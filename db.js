@@ -17,6 +17,7 @@ function writeUserData(title, body) {
     title_note: title,
     body_note: body
   });
+  pusher(title, body);
 }
 
 function getForms() {
